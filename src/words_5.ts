@@ -1,7 +1,9 @@
 const words = {
 	"words": [
-		"tribi",
 		"bachi",
+		"joerg",
+		"tribi",
+		"simon",
 		"alpen",
 		"berge",
 		"piste",
