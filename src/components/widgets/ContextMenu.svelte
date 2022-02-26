@@ -14,20 +14,20 @@
 <div class="ctx-menu" style="top: {y}px; left: {x}px;">
 	{#if word !== ""}
 		<div>
-			Considering all hints, this row had:
+			Mit den Hinweisen gab es für diese Zeile:
 			<br /><br />
-			{pAns} possible answers
+			{pAns} mögliche Antworten
 			<br />
-			{pSols} valid guesses
+			{pSols} Lösungsmöglichkeiten
 		</div>
 		<Definition {word} alternates={1} />
 	{:else}
 		<div>
-			Considering all hints, there are:
+			Mit den Hinweisen gibt es :
 			<br /><br />
-			{pAns} possible answers
+			{pAns} mögliche Antworten
 			<br />
-			{pSols} valid guesses
+			{pSols} Lösungsmöglichkeiten
 		</div>
 	{/if}
 </div>

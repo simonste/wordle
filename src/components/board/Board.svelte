@@ -66,8 +66,8 @@
 	{/if}
 	{#if tutorial}
 		<div transition:scale class="tutorial" on:click={() => dispatch("closeTutPopUp")}>
-			double tap (right click) a row to see a word's definition, or how many words could be
-			played there
+			Doppelklick (rechtskclick) auf eine Zeile um die Definition des Wortes zu sehen bzw.
+			wie viele Lösungsmöglichkeiten bleiben.
 			<span class="ok">OK</span>
 		</div>
 	{/if}
