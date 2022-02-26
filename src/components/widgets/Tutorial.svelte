@@ -5,49 +5,37 @@
 	export let visible: boolean;
 </script>
 
-<h3>how to play</h3>
-<div>Guess the <strong>WORDLE</strong> in {ROWS} tries.</div>
-<div>Each guess must be a valid {COLS} letter word. Hit the enter button to submit.</div>
+<h3>Spielanleitung</h3>
+<div>Errate das <strong>WORDLE</strong> in {ROWS} versuchen.</div>
+<div>Jeder Versuch muss ein gültiges {COLS}-Buchstabiges Wort sein.</div>
 <div>
-	After each guess, the color of the tiles will change to show how close your guess was to the
-	word.
+	Nach jedem Versuch zeigt die Farbe des Buchstabens an, wie gut dieser war.
 </div>
 <div class:complete={visible} class="examples">
-	<div><strong>Examples</strong></div>
+	<div><strong>Beispiele</strong></div>
 	<div class="row">
-		<Tile value="w" state="🟩" />
-		<Tile value="e" state="🔳" />
+		<Tile value="B" state="🟩" />
 		<Tile value="a" state="🔳" />
+		<Tile value="u" state="🔳" />
+		<Tile value="e" state="🔳" />
 		<Tile value="r" state="🔳" />
-		<Tile value="y" state="🔳" />
 	</div>
-	<div>The letter <strong>W</strong> is in the word and in the correct spot.</div>
+	<div>Der Buchstabe <strong>B</strong> ist im Lösungswort und an derselben Stelle.</div>
 	<div class="row">
 		<Tile value="p" state="🔳" />
-		<Tile value="i" state="🟨" />
-		<Tile value="l" state="🔳" />
-		<Tile value="l" state="🔳" />
+		<Tile value="e" state="🟨" />
+		<Tile value="n" state="🔳" />
+		<Tile value="i" state="🔳" />
 		<Tile value="s" state="🔳" />
 	</div>
-	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
-	<div class="row">
-		<Tile value="v" state="🔳" />
-		<Tile value="a" state="🔳" />
-		<Tile value="g" state="🔳" />
-		<Tile value="u" state="⬛" />
-		<Tile value="e" state="🔳" />
-	</div>
-	<div>The letter <strong>U</strong> is not in the word in any spot.</div>
+	<div>Der Buchstabe <strong>E</strong> ist im Lösungswort aber nicht an derselben Stelle.</div>
 </div>
 <div>
-	This is a recreation of the original <a
+	Dies ist eine Kopie vom original <a
 		href="https://www.powerlanguage.co.uk/wordle/"
 		target="_blank">Wordle</a
 	>
-	by Josh Wardle with additional modes and features. Written with Svelte, in Typescript by
-	<a href="https://github.com/MikhaD" target="_blank">MikhaD</a>.
-	<br />
-	Open the settings menu to see some of the additional features.
+	von Josh Wardle. Der Kopie wurde von <a href="https://github.com/MikhaD" target="_blank">MikhaD</a> erstellt.
 </div>
 
 <style lang="scss">

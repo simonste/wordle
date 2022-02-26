@@ -29,7 +29,7 @@
 <!-- <svelte:body class:light={!$settings.dark} class:colorblind={$settings.colorblind} /> -->
 <div class="outer">
 	<div class="settings-top">
-		<h3>settings</h3>
+		<h3>Einstellungen</h3>
 		<div
 			on:click={() => {
 				if (!state.validHard) {
@@ -39,7 +39,7 @@
 		>
 			<Setting type="switch" bind:value={$settings.hard[$mode]} disabled={!state.validHard}>
 				<span slot="title">Hard Mode</span>
-				<span slot="desc">Any revealed hints must be used in subsequent guesses</span>
+				<span slot="desc">Jeder Hinweis muss in folgenden Versuchen verwendet werden.</span>
 			</Setting>
 		</div>
 		<Setting type="switch" bind:value={$settings.dark}>
@@ -53,10 +53,6 @@
 			<span slot="title">Game Mode</span>
 			<span slot="desc">The game mode determines how often the word refreshes</span>
 		</Setting>
-		<div class="links">
-			<a href="https://github.com/MikhaD/wordle" target="_blank">Leave a ⭐</a>
-			<a href="https://github.com/MikhaD/wordle/issues" target="_blank">Report a Bug</a>
-		</div>
 	</div>
 </div>
 

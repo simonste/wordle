@@ -163,7 +163,7 @@ export function contractNum(n: number) {
 	}
 }
 
-export const keys = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
+export const keys = ["qwertzuiop", "asdfghjkl", "yxcvbnm"];
 
 export function newSeed(mode: GameMode) {
 	const today = new Date();
@@ -183,7 +183,7 @@ export const modeData: ModeData = {
 	default: GameMode.daily,
 	modes: [
 		{
-			name: "Daily",
+			name: "Täglich",
 			unit: 86400000,
 			start: 1642370400000,	// 17/01/2022
 			seed: newSeed(GameMode.daily),
@@ -191,7 +191,7 @@ export const modeData: ModeData = {
 			streak: true,
 		},
 		{
-			name: "Hourly",
+			name: "Stündlich",
 			unit: 3600000,
 			start: 1642528800000,	// 18/01/2022 8:00pm
 			seed: newSeed(GameMode.hourly),
@@ -200,7 +200,7 @@ export const modeData: ModeData = {
 			streak: true,
 		},
 		{
-			name: "Infinite",
+			name: "Unendlich",
 			unit: 1000,
 			start: 1642428600000,	// 17/01/2022 4:10:00pm
 			seed: newSeed(GameMode.infinite),
@@ -231,12 +231,12 @@ export function seededRandomInt(min: number, max: number, seed: number) {
 export const DELAY_INCREMENT = 200;
 
 export const PRAISE = [
-	"Genius",
-	"Magnificent",
-	"Impressive",
-	"Splendid",
-	"Great",
-	"Phew",
+	"Genie",
+	"Grossartig",
+	"Beeindruckend",
+	"Gut",
+	"OK",
+	"Gerade so",
 ];
 
 export function createNewGame(mode: GameMode): GameState {
