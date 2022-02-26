@@ -6,7 +6,7 @@
 	$: max = Math.max(...Object.values(distribution));
 </script>
 
-<h3>guess distribution</h3>
+<h3>Verteilung</h3>
 <div class="container">
 	{#each Object.entries(distribution) as guess, i (guess[0])}
 		{#if !isNaN(parseInt(guess[0]))}

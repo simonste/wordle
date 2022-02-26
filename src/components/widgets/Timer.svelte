@@ -35,7 +35,7 @@
 	$: reset($mode);
 </script>
 
-<h3>Next wordle</h3>
+<h3>Nächstes wordle</h3>
 <div class="container">
 	{#if ms > 0}
 		<div class="timer">
