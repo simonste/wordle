@@ -11,7 +11,11 @@ const words = {
 		"skier",
 		"kater",
 		"loewe",
-		"tabak"
+		"tabak",
+		"cyril",
+		"maesi",
+		"biere",
+		"marty"
 	],
 	"valid": [
 		"aalen",
